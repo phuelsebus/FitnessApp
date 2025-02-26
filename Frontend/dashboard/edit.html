@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./edit.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1><a href="dashboard.html">Mitglied bearbeiten</a></h1>
+    <form onsubmit="return editMitglied()">
+      <input id="id-field" type="text" readonly />
+      <input id="firstname-field" type="text" />
+      <input id="lastname-field" type="text" />
+      <input id="age-field" type="text" />
+      <button type="submit">Bearbeiten</button>
+      <button type="button" onclick="addMitglied()">Hinzufügen</button>
+    </form>
+
+    <script src="./edit.js"></script>
+  </body>
+</html>

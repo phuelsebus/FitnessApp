@@ -1,0 +1,81 @@
+button {
+    background-color: #ff9e6e; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the button inline-block */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 12px; /* Rounded corners */
+    transition-duration: 0.4s; /* 0.4 seconds transition effect to hover state */
+}
+
+button:hover {
+    background-color: #e6b89c; /* White background on hover */
+    color: black;
+}
+
+body {
+    background-color: #ffd5bd; /* Light grey background */
+    font-family: Arial, sans-serif; /* Use Arial font */
+    color: #947a7a;
+}
+
+header {
+    background-color: #ff9e6e; /* Match button background color */
+    color: white; /* White text */
+    padding: 1rem 0; /* Add padding */
+    text-align: center; /* Center the text */
+}
+
+nav a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    margin: 0 1rem; /* Add space between links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+main {
+    padding: 2rem; /* Add padding */
+    max-width: 800px; /* Limit width */
+    margin: 2rem auto; /* Center the main content */
+    background-color: white; /* White background */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add shadow for a 3D effect */
+    border-radius: 8px; /* Rounded corners */
+}
+
+input {
+    padding: 0.5rem; /* Add padding */
+    border: 2px solid #ff9e6e; /* Match button border color */
+    border-radius: 4px; /* Rounded corners */
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 2rem; /* Add some margin at the top */
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1); /* Add shadow for a 3D effect */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #ff9e6e; /* Match button background color */
+    color: #fff; /* White text */
+    font-size: 1.2rem;
+}
+
+
+tr:nth-child(even) {
+    background-color: #ffd5bd; /* Match body background color */
+}
+
+td {
+    padding: 1rem;
+}
