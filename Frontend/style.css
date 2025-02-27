@@ -1,39 +1,49 @@
 button {
-    background-color: #ff9e6e; /* Green background */
-    border: none; /* Remove borders */
-    color: white; /* White text */
-    padding: 15px 32px; /* Some padding */
-    text-align: center; /* Center the text */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Make the button inline-block */
-    font-size: 16px; /* Increase font size */
-    margin: 4px 2px; /* Some margin */
-    cursor: pointer; /* Pointer/hand icon */
-    border-radius: 12px; /* Rounded corners */
-    transition-duration: 0.4s; /* 0.4 seconds transition effect to hover state */
+    background: linear-gradient(135deg, #a8dc5d, #4FC3F7);
+    border: none;
+    color: #000000;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
-    background-color: #e6b89c; /* White background on hover */
-    color: black;
+    background: linear-gradient(135deg, #4FC3F7, #a8dc5d);
+    color: #000000;
+    transform: scale(1.1);
 }
 
 body {
-    background-color: #ffd5bd; /* Light grey background */
-    font-family: Arial, sans-serif; /* Use Arial font */
-    color: #947a7a;
+    background: #2A2A40;
+    font-family: 'Roboto', sans-serif;
+    color: #a8dc5d;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 a {
-    color: #947a7a; /* White text */
-    text-decoration: none; /* Remove underline */
+    color: #a8dc5d;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #4FC3F7;
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 15px; /* Space between each input and button */
+    gap: 15px;
     margin-top: 2rem;
 }
 
@@ -46,9 +56,11 @@ textarea {
     padding: 10px;
     margin: 5px 0;
     box-sizing: border-box;
-    border: 2px solid #ff9e6e;
+    border: 2px solid #a8dc5d;
     border-radius: 4px;
     font-size: 16px;
+    background: linear-gradient(135deg, #2A2A40, #3A3A55);
+    color: #FFFFFF;
     transition: border-color 0.3s;
 }
 
@@ -56,6 +68,6 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
 textarea:focus {
-    border-color: #e6b89c;
+    border-color: #4FC3F7;
     outline: none;
 }

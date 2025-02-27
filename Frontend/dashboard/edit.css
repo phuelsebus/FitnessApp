@@ -1,94 +1,125 @@
-button {
-    background-color: #ff9e6e; /* Green background */
-    border: none; /* Remove borders */
-    color: white; /* White text */
-    padding: 15px 32px; /* Some padding */
-    text-align: center; /* Center the text */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Make the button inline-block */
-    font-size: 16px; /* Increase font size */
-    margin: 4px 2px; /* Some margin */
-    cursor: pointer; /* Pointer/hand icon */
-    border-radius: 12px; /* Rounded corners */
-    transition-duration: 0.4s; /* 0.4 seconds transition effect to hover state */
-}
+@import url('https://fonts.googleapis.com/css2?family=Product+Sans&display=swap');
 
-button:hover {
-    background-color: #e6b89c; /* White background on hover */
-    color: black;
+* {
+    font-family: 'Product Sans', sans-serif;
 }
 
 body {
-    background-color: #ffd5bd; /* Light grey background */
-    font-family: Arial, sans-serif; /* Use Arial font */
-    color: #947a7a;
+    background: #2A2A40;
+    font-family: 'Roboto', sans-serif;
+    color: #a8dc5d;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 header {
-    background-color: #ff9e6e; /* Match button background color */
-    color: white; /* White text */
-    padding: 1rem 0; /* Add padding */
-    text-align: center; /* Center the text */
+    background: linear-gradient(135deg, #2A2A40, #a8dc5d);
+    color: #FFFFFF;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 nav a {
-    color: white; /* White text */
-    text-decoration: none; /* Remove underline */
-    margin: 0 1rem; /* Add space between links */
+    color: #a8dc5d;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
 }
 
 nav a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
+    color: #4FC3F7;
 }
 
 main {
-    padding: 2rem; /* Add padding */
-    max-width: 800px; /* Limit width */
-    margin: 2rem auto; /* Center the main content */
-    background-color: white; /* White background */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add shadow for a 3D effect */
-    border-radius: 8px; /* Rounded corners */
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    background: linear-gradient(135deg, #2A2A40, #3A3A55);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+button {
+    background: linear-gradient(135deg, #a8dc5d, #4FC3F7);
+    border: none;
+    color: #000000;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #4FC3F7, #a8dc5d);
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.input-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 input {
-    padding: 0.5rem; /* Add padding */
-    border: 2px solid #ff9e6e; /* Match button border color */
-    border-radius: 4px; /* Rounded corners */
+    padding: 0.5rem;
+    border: 2px solid #a8dc5d;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #a8dc5d, #4FC3F7);
+    color: #000000;
+    flex: 1;
+    min-width: 200px;
 }
 
 input:focus {
-    outline: none; /* Remove default blue outline */
-    border-color: #e6b89c; /* Change border color on focus */
+    outline: none;
+    border-color: #4FC3F7;
 }
 
 table {
-    width: 50%;
+    width: 100%;
     border-collapse: collapse;
-    margin-top: 2rem; /* Add some margin at the top */
-    box-shadow: 0 2px 3px rgba(0,0,0,0.1); /* Add shadow for a 3D effect */
-    border-radius: 12px;
+    margin-top: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     overflow: hidden;
+    background: linear-gradient(135deg, #2A2A40, #3A3A55);
 }
 
 thead {
-    background-color: #ff9e6e; /* Match button background color */
-    color: #fff; /* White text */
-    font-size: 1.2rem;
+    background: linear-gradient(135deg, #a8dc5d, #4FC3F7);
+    color: #FFFFFF;
+    font-size: 1.1rem;
 }
 
 tr:nth-child(even) {
-    background-color: #ffd5bd; /* Match body background color */
+    background: linear-gradient(135deg, #3A3A55, #2A2A40);
 }
 
-td {
+td, th {
     padding: 1rem;
+    text-align: left;
+}
+
+tr:hover {
+    background: linear-gradient(135deg, rgba(79, 195, 247, 0.8), rgba(168, 220, 93, 0.8));
 }
 
 a {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit color from parent */
+    text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
-    text-decoration: none; /* Remove underline on hover */
+    text-decoration: none;
 }
